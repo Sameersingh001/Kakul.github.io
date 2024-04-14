@@ -1,0 +1,351 @@
+
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sweetu</title>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #eaeaea;
+    overflow: hidden;
+}
+
+@media only screen and (max-width:600px)  {
+    
+    .container{
+        max-width:100%;;
+        height:150rem;
+    
+    }
+    
+    .container .slide{
+
+        max-width:600px;;
+        height:150rem;
+    
+    }
+    
+    .container .slide .item{
+        max-width:80rem;
+        height: 120rem;
+    }
+    
+
+
+    
+    
+    }
+    
+
+
+
+
+
+@media only screen and (max-width:400px)  {
+    
+.container{
+    max-width:100%;;
+    height:700px;
+
+}
+
+.container .slide{
+    max-width:100%;;
+    height:700PX;
+}
+
+.container .slide .item{
+    
+}
+
+h1{
+  font-size: 30px;
+
+}
+
+
+}
+
+
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    object-fit: cover;
+    height: 600px;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+    overflow: hidden;
+}
+
+
+.container .slide{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    
+}
+
+
+.container .slide .item{
+
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, 20%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #c9c4c4;
+    background-position: 50% 50%;
+    background-size: cover;
+
+    transition: 0.5s;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.slide .item:nth-child(3){
+    top: 60%;
+    left: 60%;
+}
+.slide .item:nth-child(4){
+    top: 60%;
+    left: calc(50% + 220px);
+}
+.slide .item:nth-child(5){
+    top: 60%;
+    left: calc(40% + 440px);
+}
+
+/* here n = 0, 1, 2, 3,... */
+.slide .item:nth-child(n + 6){
+    top: 60%;
+    left: calc(50% + 660px);
+    opacity: 0;
+}
+
+
+
+.item .content{
+    position: relative;
+    margin-top:15rem;
+    margin-left: .5rem;
+    width: 300px;
+    text-align: left;
+    color: #eee;
+    transform: translate(0, -50%);
+    font-family: system-ui;
+    display: none;
+}
+
+
+.slide .item:nth-child(2) .content{
+    display: block;
+}
+
+
+.content .name{
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+
+.content .des{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+
+
+@keyframes animate {
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+
+
+.button{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.button button{
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+
+.button button:hover{
+    background: #ababab;
+    color: #fff;
+}
+
+
+
+</style>
+
+
+
+
+
+</head>
+<body>
+    
+     
+<div class="container">
+
+    <div class="slide">
+
+       
+        <div class="item" style="background-image: url(IMG_20230828_192542_941.jpg);">
+         
+            <div class="content">
+               
+                <div class="name"><h1>Masoomiyat</h1></div>
+                <div class="des"><p>Kitni Masumiyat is chahere m dekhte hi pyar ho jaye koi kese apko pyar n kare hum to apko dekhte hi apke pyar m kho jaye <br>
+                    Aapki is dil lagi me hum apna dil kho baithe
+                    <br>
+
+                    Kal tak hum khud k the aaj apke ho baithe. <br>
+  
+                     suna to tha pyar diwana kr deta hai.
+                     <br>
+
+                     jaan liya apse milne k baad....
+                </p></div>
+              
+            </div>
+        </div>
+        <div class="item" style="background-image: url(IMG_20231001_064148_453.jpg);">
+             
+            <div class="content">
+                
+                <div class="name"><h1>Ye Nazren</h1></div>
+                <div class="des"><p>Kuch to Baat h apki in nighaoo m ek baar nazren kya milai ye kambakkt dil in pr mar gaya 
+                    kesa jadu h ye nasre mila kr jo hash diya humare vahi kaam tamam ho gaya.. 
+                    ye ankhen nahi jaam h ishq h ka <br><br>
+                    ki ye ankhen nahi jaam h ishq h ka <br><br>
+                    inme dub jaana khyab h kisi shaks ka vo koi aur nhi jise aap chahati  ho<br>
+                    Aram h us shaks ka.    
+                </p></div>
+    
+            </div>
+        </div>
+        <div class="item" style="background-image: url(IMG-20240325-WA0017.jpg);">
+            <div class="content">
+                <div class="name"><h1>apki Bataen</h1></div>
+                <div class="des"><p>Ye aoki baton m ulze hue h hum kya kre itni mithi jo h aapki har baat hume acchi lagti h apke sari pgluu wali harkate hume acchi lagti h jante h aap bacchi ban jati ho pr hume
+                    apki bacchi wale harkate achhi lagti h . 
+                    ye apki pyari si harkate ye apka masson sa chehra aur apka pyar hum sachhi kehte sab achha lagta  
+                </p></div>
+     
+            </div>
+        </div>
+        <div class="item" style="background-image: url(IMG-20240325-WA0018.jpg);">
+            <div class="content">
+                <div class="name"><h1>Ye hotho pr hasi</h1></div>
+                <div class="des"><p>Ek baar has do meri jaan kya hashi h ye dil m sama jati h ye hashi nhi koi pyar sa ehsaas h jo apke has dene 
+                    se hume hota h ye muskurahat nhi hamara chain h jo apke has dene se hume mil jata h 
+                    <br>
+                    Har Lamha Apke Hothon Pe Muskan Rahe; 
+                    Har Gum Se Aap Anjaan Rahen; 
+                    hum apke sath sath hamesha rahen ; 
+                    apki ye muskaan kam kabhi n hone den 
+                </p></div>
+          
+            </div>
+        </div>
+        <div class="item" style="background-image: url(IMG-20240325-WA0019.jpg);">
+            <div class="content">
+                <div class="name"><h1>Apka Roop</h1></div>
+                <div class="des"> <p> Kaha se aayi ho aap kitna Haseen Roop h kitni pyari surat h aap ladki nhi koi princess se kam nhi koi 
+                    jaan aap itni pyari kese ho koi itna bhola kese ho sakta h . apki zulfe mano koi bandhan h apki gardan mano koi 
+                    Nashe ka jaam ho apke hotho ki kya baar kre chumte hi nasha ho jata h kya  chiz ho aap koi ladki ya nashe ki dukan ho aap 
+                </p>
+                </div>
+              
+            </div>
+        </div>
+        <div class="item" style="background-image: url(Screenshot_20230531-143717~2.png);">
+            <div class="content">
+                <div class="name"><h1>Mithas</h1></div>
+                <div class="des"><p>apke ye gulabi hotho m vo mithas h jo puri duniya ka shahd bhi nhi bana payega kya baad h apke in hotho ki muskurahat m syd hamara sukoon h in hotho m hamse mila pyar h in hotho me 
+                    apmare chahre ki hashi h in hotho m apka hamre liye pyar h in hotho m <br><br>
+                    
+                    hashti hui apsara lati ho aap <br>
+                    kabhi hashi n jaye apke in lavo se esa n hone denge hum kabhi <br>
+                    apni jaan ko khish rakhenge hum hi ...
+                </p></div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <div class="button">
+        <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+</div>
+
+
+<script>
+    let next = document.querySelector('.next')
+let prev = document.querySelector('.prev')
+
+next.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').appendChild(items[0])
+})
+
+prev.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+})
+</script>
+
+</body>
+</html>
